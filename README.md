@@ -1,98 +1,36 @@
-# 🎓 Student Career Analytics
+# 🎓 Student Career Navigator
 
-A machine learning based web application that analyzes a student's academic, technical, aptitude, experience, and professional profile to predict placement status and calculate a Career Readiness Score.
+A personalized career guidance web application that helps students discover suitable career directions based on their interests, aptitude, work style, and current skill evidence.
 
-## 🚀 Features
+The system does not try to make a final decision about a student's career. Instead, it provides recommendation signals, identifies areas for development, and creates a personalized learning roadmap.
 
-- Placement prediction using Machine Learning
-- Career Readiness Score out of 100
-- Readiness level classification
-- Academic performance analysis
-- Technical/project analysis
-- Aptitude analysis
-- Internship/experience analysis
-- Professional skills analysis
-- Strengths identification
-- Areas for improvement
-- Personalized recommendations
-- Interactive career-readiness chart
-- Streamlit-based web interface
+---
 
-## 🧠 Machine Learning
+## 🎯 Project Objective
 
-The project compares multiple classification models:
+Choosing a career can be difficult because students often know what subjects they like but do not know:
 
-- Logistic Regression
-- Decision Tree
-- Random Forest
+- Which careers may suit their profile
+- What skills those careers require
+- Which skills they already have
+- What skills they need to improve
+- What they should learn next
 
-### Model Performance
-
-| Model | Accuracy |
-|---|---:|
-| Logistic Regression | 79.19% |
-| Decision Tree | 70.42% |
-| Random Forest | 79.54% |
-
-Random Forest achieved the highest accuracy among the tested models.
-
-## 📊 Career Readiness
-
-The Career Readiness Score is calculated using five major categories:
-
-| Category | Maximum Score |
-|---|---:|
-| Academic | 25 |
-| Technical / Projects | 30 |
-| Aptitude | 15 |
-| Experience | 15 |
-| Professional Skills | 15 |
-| **Total** | **100** |
-
-### Readiness Levels
-
-| Score | Level |
-|---:|---|
-| 80–100 | Excellent |
-| 70–79.99 | Good |
-| 60–69.99 | Developing |
-| Below 60 | Needs Improvement |
-
-## 🛠️ Technologies Used
-
-- Python
-- Pandas
-- NumPy
-- Scikit-learn
-- Streamlit
-- Plotly
-- Joblib
-
-## 📁 Project Structure
+**Student Career Navigator** connects these stages into one system.
 
 ```text
-Student-Career-Analytics/
-│
-├── app/
-│   └── app.py
-│
-├── data/
-│
-├── models/
-│   ├── label_encoder.pkl
-│   ├── placement_model.pkl
-│   └── preprocessor.pkl
-│
-├── notebooks/
-│
-├── src/
-│   ├── inspect_data.py
-│   ├── predict.py
-│   ├── preprocess.py
-│   ├── readiness.py
-│   └── train_model.py
-│
-├── .gitignore
-├── PROJECT_NOTES.md
-├── README.md
-└── requirements.txt
+Student Profile
+      ↓
+Interest Assessment
+      ↓
+Aptitude Assessment
+      ↓
+Work-Style Assessment
+      ↓
+Career Matching
+      ↓
+Skill Gap Analysis
+      ↓
+Career Readiness
+      ↓
+Personalized Roadmap
